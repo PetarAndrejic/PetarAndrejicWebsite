@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(37, 10, 81);
+    color: whitesmoke;
+    align-items: center;
+}
+header{
+    width:100%;
+    height: 130px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(37, 10, 81);
+}
+ul{
+    list-style-type: none;
+    position: relative;
+}
+nav{
+    flex:1;
+    text-align: right;
+    text-decoration: none;
+        margin-right: 20px;
+}
+nav ul li{
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    padding: 8px 12px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav ul li ::after{
+    content: '';
+    width: 0%;
+    height:2px;
+    background: whitesmoke;
+    display: block;
+    margin: auto;
+    transition: 0.7s;
+}
+nav ul li :hover::after{
+    width: 100%;
+}
+#logo{
+    display: inline-block;
+    text-align: center;
+    margin: 0px 0px 0px 20px;
+}
+#ime{
+
+    margin-left: 40px;
+    padding: 0px auto;
+    font-size: 28px;
+
+}
+h1{
+    padding-top: 20px;
+    font-size: 60px;
+}
+.kontakttelo{
+    text-align: center;
+    width: 100%;
+}
+.forma{
+    padding-top: 30px;
+}
+input{
+    width:70%;
+    font-size: 20px;
+    padding:16px 16px;
+    border-radius: 10px;
+    border-color: black;
+    margin-bottom: 20px;
+}
+input:focus-within{
+    outline:none;
+    border-color: lime;
+
+}
+textarea{
+    width:70%;
+    font-size: 20px;
+    padding:16px 16px;
+    border-radius: 10px;
+    border-color: black;
+    margin-bottom: 20px;
+}
+textarea:focus-within{
+    outline:none;
+    border-color: lime;
+
+}
+button{
+    color:black;
+    width: 150px;
+    font-size: 12px;
+    padding: 12px 0px;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-bottom: 100px;
+}
+button a{
+    text-decoration: none;
+    color: black;
+}
+.kontakttelo{
+    display: flex;
+}
+.desnokontakt{
+    margin-top: 150px;
+    margin-left: 100px;
+}

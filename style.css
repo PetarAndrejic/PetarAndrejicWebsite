@@ -1,0 +1,282 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.cistac{
+    clear:both;
+}
+body{
+
+    background-color: rgb(37, 10, 81);
+}
+header{
+    width:100%;
+    height: 130px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(37, 10, 81);
+}
+ul{
+    list-style-type: none;
+    position: relative;
+}
+nav{
+    flex:1;
+    text-align: right;
+    text-decoration: none;
+        margin-right: 20px;
+}
+nav ul li{
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    padding: 8px 12px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav ul li ::after{
+    content: '';
+    width: 0%;
+    height:2px;
+    background: whitesmoke;
+    display: block;
+    margin: auto;
+    transition: 0.7s;
+}
+nav ul li :hover::after{
+    width: 100%;
+}
+#logo{
+    display: inline-block;
+    text-align: center;
+    margin: 0px 0px 0px 20px;
+}
+#ime{
+
+    margin-left: 40px;
+    padding: 0px auto;
+    font-size: 28px;
+
+}
+.kolona{
+    color:white;
+    align-items: center;
+    text-align: center;
+    width: 800px;
+    margin-left: 360px;
+
+}
+.kolona h2{
+    font-size: 54px;
+}
+.kolona p{
+    text-shadow: 1px 1px 2px black;
+}
+.red{
+    width: 100%;
+    padding-top: 260px;
+    display: flex;
+    align-items: center;
+}
+button{
+    color:black;
+    width: 150px;
+    font-size: 12px;
+    padding: 12px 0px;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 50px;
+}
+button a{
+    text-decoration: none;
+    color: black;
+}
+.sadrzaj{
+    display:flex;
+
+}
+
+.introdukcija{
+
+    width: 100%;
+    height: 760px;
+    background-image: url("slike/telopozadina.jpg");    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.usluge{
+    padding: 30px 10% 120px;
+    background-color: rgb(37, 10, 81);
+    height: 250px;
+}
+.usluge .heading{
+    text-align: center;
+}
+.usluge .heading h3{
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fbfbf4;
+}
+.usluge .kartica-sadrzaj{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: flex-end;
+    gap: 0.90px;
+    margin-top: 30px;
+}
+.usluge .kartica-sadrzaj .kartica{
+    background: rgb(37, 10, 81);
+    box-shadow: rgba(89, 89, 89, 0.142) 0px 4px 12px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 5px;
+}
+.usluge .kartica i{
+    color: #f4f5fb;
+    font-size: 60px;
+    padding: 10px;
+    display: block;
+}
+.usluge .kartica-telo h3{
+    color: #f4f5fb;
+    font-size: 25px;
+}
+.usluge .kartica-telo p{
+    color: #f4f5fb;
+}
+
+.naselokacije{
+    width:100%;
+    margin-top: 20px;
+    text-align: center;
+}
+.location-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 600px;
+    background-color: rgb(37, 10, 81);
+}
+
+.location-info {
+    max-width: 600px;
+}
+
+.location-info h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.location-info p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.location-image {
+    max-width: 50%;
+    border-radius: 8px;
+}
+.zadnja-sekcija{
+    background-size: fill;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url("slike/slajder6.jpg");
+    height:600px;
+    text-align: center;
+    padding: 50px;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+}
+
+.o-nama-box {
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(37, 10, 81);
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 300px;
+    margin-top: 100px;
+}
+
+.about-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.about-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.about-button:hover {
+    background-color: #2980b9;
+    transition: 0.3s;
+}
+#about-title {
+    width: 100%;
+    text-align: center;
+    border-bottom: 4px #fff solid;
+    border-radius: 7px;
+}
+
+#o-nama-desno .section-title {
+    width: 100%;
+}
+
+
+#o-nama-box {
+    background-color: rgb(37, 10, 81);
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15% 10%;
+    border: rgb(204, 28, 28) solid 3.5px;
+    padding: 20px;
+    margin-top: 70px;
+}
+
+#o-nama-levo img {
+    width: 80%;
+    border-radius: 15% 10%;
+    border: #9AD0C2 solid 3px;
+}
+
+#o-nama-levo {
+    padding-left: 45px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 45%;
+}
+
+#o-nama-desno {
+    padding-right: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+    gap: 20px;
+}

@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+header{
+    width:100%;
+    height: 130px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(37, 10, 81);
+}
+ul{
+    list-style-type: none;
+    position: relative;
+}
+nav{
+    flex:1;
+    text-align: right;
+    text-decoration: none;
+        margin-right: 20px;
+}
+nav ul li{
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    padding: 8px 12px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav ul li ::after{
+    content: '';
+    width: 0%;
+    height:2px;
+    background: whitesmoke;
+    display: block;
+    margin: auto;
+    transition: 0.7s;
+}
+nav ul li :hover::after{
+    width: 100%;
+}
+#logo{
+    display: inline-block;
+    text-align: center;
+    margin: 0px 0px 0px 20px;
+}
+#ime{
+
+    margin-left: 40px;
+    padding: 0px auto;
+    font-size: 28px;
+
+}
+
+section {
+    padding: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url("slike/slajder8.jpg");
+    background-size: cover;
+
+}
+
+.package-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.package-card {
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.package-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+button{
+    color:black;
+    width: 150px;
+    font-size: 12px;
+    padding: 12px 0px;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 50px;
+    background-color: rgb(28, 207, 207);
+}
+button a{
+    text-decoration: none;
+    color: black;
+}
